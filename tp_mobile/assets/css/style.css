@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font */
+* { font-family: 'Spoqa Han Sans Neo', 'sans-serif' !important; }
+/* font */
+
+/* reset */
+.text-truncate{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wrap{
+  @apply w-full h-full;
+}
+/* reset */
+
+/* introScreen */
+.introScreen{
+  @apply relative w-full h-[690px] flex justify-center items-center;
+  background-image: url(../img/introScreen.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover
+}
+
+.introScreen-txt strong{
+  @apply block text-white text-[32px] font-bold leading-[48px] text-center mb-[25px];
+}
+
+.introScreen-txt span{
+  @apply block text-white text-[16px] font-[300] leading-[24px] text-center mb-[100px];
+}
+
+.scrollDown{
+  @apply absolute bottom-[20px];
+}
+
+.mouseIcn{
+  @apply flex justify-center items-center mb-[3px];
+}
+
+.scrollDown-txt{
+  @apply text-white text-[12px] font-[300] leading-[18px];
+}
+/* introScreen */
+
+/* possession */
+.possession{
+  @apply p-[34px_45px_37px] text-center;
+}
+
+.possession p{
+  @apply text-black text-[20px] font-normal leading-[30px];
+}
+
+.possession p span{
+  @apply text-mainColor font-bold;
+}
+/* possession */
+
+/* tpInquiry */
+.tpInquiry{
+  @apply bg-mainColor p-[40px_0] text-center;
+}
+
+.inquiry-title{
+  @apply text-white text-[20px] font-normal leading-[30px] mb-[14px];
+}
+
+.inquiry-title span{
+  @apply block text-[32px] font-bold;
+}
+
+.inquiry-txt{
+  @apply text-white text-[16px] font-normal leading-[24px] mb-[28px];
+}
+
+.inquiry-btn{
+  @apply w-full text-center;
+}
+
+.inquiry-btn button{
+  @apply w-[207px] h-[43px] rounded-[50px] border border-white text-white text-[14px] font-bold leading-[21px];
+}
+/* tpInquiry */

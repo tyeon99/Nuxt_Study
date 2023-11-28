@@ -1,0 +1,106 @@
+/* mainHeader */
+.mainHeader{
+  @apply w-full h-full sticky top-0 z-[99] bg-white;
+}
+
+.headerWrapper{
+  @apply w-full h-[50px] p-[14px_20px_12px] flex justify-between items-center;
+}
+
+.menu{
+  @apply flex justify-center items-center;
+}
+
+.menu button img{
+  @apply w-[24px] h-[24px];
+}
+
+/* sideMenu */
+.offcanvas{
+  @apply !w-full !border-none;
+}
+
+.offcanvas-header{
+  @apply w-full h-[50px] sticky p-[14px_20px_12px] flex justify-between items-center;
+}
+
+.offcanvas-header button{
+  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+  @apply !p-[4px] opacity-100 !m-0;
+}
+
+.offcanvas-header button:focus{
+  @apply shadow-none;
+}
+
+.offcanvas-body{
+  @apply p-0;
+}
+
+.language{
+  @apply flex justify-end items-center p-[13px_20px] border-b border-[#F0F0F0];
+}
+
+.language div{
+  @apply flex gap-[5px] justify-center items-center;
+}
+
+.language div button{
+  @apply p-[2px] rounded-[4px] border border-[#DADADA] opacity-[0.8] text-[#DFDFDF] text-[10px] font-normal leading-[10px];
+}
+
+.language div button.active{
+  @apply text-mainColor border-mainColor;
+}
+
+.accordion{
+  --bs-accordion-btn-focus-border-color: none;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.accordion-item{
+  @apply border-none p-0 border-b border-[#E6E6EB];
+}
+
+.accordion-button{
+  @apply text-black text-[20px] font-bold leading-[30px];
+}
+
+.accordion-button::after {
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/down_arrow.png);
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+}
+
+.accordion-button:not(.collapse)::after{
+  background-image: url(../img/down_arrow.png);
+}
+
+.accordion-button:not(.collapsed) {
+  @apply text-black shadow-none;
+  background: none;
+}
+
+.accordion-body{
+  @apply p-[15px_20px] bg-[#F4F5F6] border-b border-[#E6E6EB];
+}
+
+.collapse{
+  @apply visible;
+}
+
+.accordion-body ul li{
+  @apply p-[5px_0] text-black text-[14px] font-normal leading-[21px];
+}
+
+.accordion-body ul.subAcc span{
+  @apply block w-full text-black text-[16px] font-bold leading-[24px] p-[8px_0px];
+}
+
+.accordion-body ul.subAcc li{
+  @apply p-[5px_20px];
+}
+/* sideMenu */
+/* mainHeader */

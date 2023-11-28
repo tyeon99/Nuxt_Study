@@ -1,0 +1,45 @@
+/* mainFooter */
+.mainFooter{
+  @apply w-full h-full p-[35px_20px] bg-[#1F2237];
+}
+
+.footerLogo{
+  @apply mb-[20px];
+}
+
+.footerLogo img{
+  @apply w-[110px];
+}
+
+.footerTxt{
+  @apply text-[#A2A5BC] text-[13px] font-normal leading-[20px] mb-[28px];
+}
+
+.selectbox{
+  @apply relative w-full flex justify-between items-center hover:cursor-pointer rounded-[5px] border border-[#A2A5BC] p-[10px_25px];
+}
+
+.selected-txt{
+  @apply text-[#A2A5BC] text-[14px] font-normal leading-[21px];
+}
+
+.options{
+  @apply w-[320px] hidden overflow-hidden absolute bottom-[44.52px] left-[-1px] text-left border border-[#A2A5BC] rounded-t-[5px] border-b-0;
+}
+
+.selectbox.active{
+  @apply rounded-t-none;
+}
+
+.selectbox.active .options{
+  @apply block;
+}
+
+.option-txt{
+  @apply w-full text-left text-[#A2A5BC] p-[10px_25px] border-b border-[#A2A5BC] bg-[#1F2237];
+}
+
+.option-txt:last-child{
+  @apply border-b-0;
+}
+/* mainFooter */

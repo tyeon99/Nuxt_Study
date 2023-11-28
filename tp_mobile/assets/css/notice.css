@@ -1,0 +1,33 @@
+/* notice */
+.notice{
+  @apply p-[50px_16px] bg-white;
+}
+
+.notice-title{
+  @apply flex justify-between items-center mb-[36px];
+}
+
+.title-txt{
+  @apply text-black text-[26px] font-bold leading-[39px];
+}
+
+.notice-list{
+  @apply w-full text-left p-[13px_0px] border-b border-[#E6E6EB];
+}
+
+.notice-list:first-child{
+  @apply pt-0;
+}
+
+.notice-list:last-child{
+  @apply pb-0 border-none;
+}
+
+.list-content{
+  @apply w-full text-black text-[16px] font-normal leading-[24px];
+}
+
+.list-date{
+  @apply text-[#A9A9A9] text-[12px] font-normal leading-[20px];
+}
+/* notice */
