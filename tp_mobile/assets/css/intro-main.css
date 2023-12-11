@@ -1,0 +1,35 @@
+.introMain{
+  @apply pt-[50px];
+}
+
+.mainTitle{
+  @apply text-center mb-[50px];
+}
+
+.mainTitle span{
+  @apply block text-[#9395A1] text-[14px] font-normal mb-[3px];
+}
+
+.mainTitle strong{
+  @apply text-black text-[32px] font-bold leading-[48px];
+}
+
+.mainImg{
+  @apply mb-[60px];
+}
+
+.mainTxt{
+  @apply z-[-1] relative p-[0px_35px] text-black text-[24px] font-normal leading-[36px] mb-[60px];
+}
+
+.mainTxt::before{
+  @apply z-[-1] absolute content-['“'] text-[128px] text-[#E6E6EB] top-[35px] left-[7px];
+}
+
+.mainTxt::after{
+  @apply z-[-1] absolute content-['”'] text-[128px] text-[#E6E6EB] top-[133px] left-[105px];
+}
+
+.mainStxt{
+  @apply text-[#444] text-[16px] font-normal leading-[24px] p-[0px_20px] mb-[35px];
+}

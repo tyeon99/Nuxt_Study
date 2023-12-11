@@ -51,6 +51,9 @@ export default {
     {
       path: '~/components/landing/',
     },
+    {
+      path: '~/components/intro/',
+    },
   ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules

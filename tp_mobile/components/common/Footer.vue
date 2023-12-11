@@ -17,16 +17,15 @@
 
     <div class="siteSelect">
       <!-- <label for="select">Family Site</label> -->
-      <button class="selectbox">
+      <button class="selectbox" @click="showSelect">
 
         <div class="selected-txt">
           Family Site
         </div>
 
-        <div class="options">
-          <button class="option-txt">사이트01</button>
-          <button class="option-txt">사이트02</button>
-          <button class="option-txt">사이트03</button>
+        <div v-if="showOptions" class="options">
+          <button class="option-txt">라씨매매비서</button>
+          <button class="option-txt">AI증권사</button>
         </div>
 
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -44,13 +43,16 @@
 export default {
   name: 'mainFooter',
 
-  mounted() {
-    const selectBox = document.querySelector('.selectbox');
-
-    selectBox.addEventListener('click', () => {
-      selectBox.classList.toggle('active');
-    })
-  }
+  data() {
+    return {
+      showOptions: false,
+    }
+  },
+  methods: {
+    showSelect() {
+      this.showOptions = !this.showOptions
+    },
+  },  
 }
 </script>
 

@@ -16,7 +16,7 @@
 }
 
 .selectbox{
-  @apply relative w-full flex justify-between items-center hover:cursor-pointer rounded-[5px] border border-[#A2A5BC] p-[10px_25px];
+  @apply relative w-full flex justify-between items-center hover:cursor-pointer rounded-[5px] border border-[#A2A5BC] p-[10px_20px];
 }
 
 .selected-txt{
@@ -24,22 +24,14 @@
 }
 
 .options{
-  @apply w-[320px] hidden overflow-hidden absolute bottom-[44.52px] left-[-1px] text-left border border-[#A2A5BC] rounded-t-[5px] border-b-0;
-}
-
-.selectbox.active{
-  @apply rounded-t-none;
-}
-
-.selectbox.active .options{
-  @apply block;
+  @apply w-[320px] p-[15px_20px_0] overflow-hidden absolute bottom-[41px] left-[-1px] text-left border border-[#A2A5BC] rounded-t-[5px] border-b-0 bg-[#1F2237];
 }
 
 .option-txt{
-  @apply w-full text-left text-[#A2A5BC] p-[10px_25px] border-b border-[#A2A5BC] bg-[#1F2237];
+  @apply w-full text-[14px] text-left text-[#A2A5BC] pb-[3px];
 }
 
 .option-txt:last-child{
-  @apply border-b-0;
+  @apply pb-[9px] border-b border-[rgba(162,165,188,0.50)];
 }
 /* mainFooter */

@@ -1,0 +1,31 @@
+.nav{
+  @apply  w-full sticky top-[50px] p-0 bg-white border-t border-b border-[#F0F0F0];
+}
+
+.home{
+  @apply p-[10px] flex justify-center items-center bg-white;
+}
+
+.navBar{
+  @apply relative flex justify-between items-center p-[5px_12px] w-[calc((100%-32px)/2)] border-l border-[#F0F0F0] bg-white;
+}
+
+.navBar div{
+  @apply text-black text-[12px] font-normal;
+}
+
+.sub-navBar{
+  @apply  absolute left-[-1px] top-[35px] w-[164px] p-[8px_12px] bg-[rgba(255,255,255,0.90)] border border-[#F0F0F0] border-t-0;
+}
+
+.sub-navBar button{
+  @apply w-full text-left p-[4px_0];
+}
+
+.sub-navBar button.active{
+  @apply font-bold;
+}
+
+.navBar.dropDown.active .sub-navBar{
+  @apply block;
+}

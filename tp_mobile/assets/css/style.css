@@ -7,6 +7,14 @@
 /* font */
 
 /* reset */
+a{
+  @apply text-black outline-none;
+}
+
+a:hover{
+  @apply text-black;
+}
+
 .text-truncate{
   overflow: hidden;
   text-overflow: ellipsis;
