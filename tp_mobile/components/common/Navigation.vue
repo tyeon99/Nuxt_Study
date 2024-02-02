@@ -18,7 +18,7 @@
       </div>
     </div>
 
-    <button class="navBar" @click="dorpDown">
+    <button class="navBar" @click="dropDown">
       <div>회사개요</div>
       <div>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -56,7 +56,7 @@ export default {
     }
   },
   methods: {
-    dorpDown() {
+    dropDown() {
       this.showDropDown = !this.showDropDown
     },
   },  
