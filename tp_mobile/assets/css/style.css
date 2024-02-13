@@ -7,6 +7,27 @@
 /* font */
 
 /* reset */
+html,
+body {
+  @apply h-full snap-y !overflow-auto;
+}
+
+em {
+  @apply not-italic;
+}
+
+.kor *.en {
+  @apply hidden !important;
+}
+.eng *.ko {
+  @apply hidden !important;
+}
+#__nuxt,
+#__layout,
+#wrap {
+  @apply snap-y;
+}
+
 a{
   @apply text-black outline-none;
 }

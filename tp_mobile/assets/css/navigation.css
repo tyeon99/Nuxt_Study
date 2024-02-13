@@ -15,17 +15,25 @@
 }
 
 .sub-navBar{
-  @apply  absolute left-[-1px] top-[35px] w-[164px] p-[8px_12px] bg-[rgba(255,255,255,0.90)] border border-[#F0F0F0] border-t-0;
+  @apply absolute left-[-1px] top-[35px] w-[164px] p-[8px_12px] bg-[rgba(255,255,255,0.90)] border border-[#F0F0F0] border-t-0;
 }
 
-.sub-navBar button{
-  @apply w-full text-left p-[4px_0];
+.sub-navBar a{
+  @apply w-full text-left p-[4px_0] block;
 }
 
-.sub-navBar button.active{
+.sub-navBar a.active{
   @apply font-bold;
 }
 
 .navBar.dropDown.active .sub-navBar{
   @apply block;
+}
+
+.dropdownNav{
+  @apply w-[calc((100%-32px)/2)];
+}
+
+.dropdownNav .navBar{
+  @apply w-full;
 }

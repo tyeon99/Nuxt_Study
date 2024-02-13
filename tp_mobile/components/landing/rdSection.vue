@@ -53,10 +53,10 @@ export default {
       spaceBetween: 20,
       loop: true,
       loopedSlides: 1,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-      },
+      // autoplay: {
+      //   delay: 2000,
+      //   disableOnInteraction: false,
+      // },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,

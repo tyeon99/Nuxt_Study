@@ -2,7 +2,7 @@
   <div class="wrap" data-server-rendered="true">
 
     <Header />
-    <Navigation />
+    <introNav />
 
     <introMain04 />
 
