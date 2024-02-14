@@ -1,5 +1,5 @@
 .nav{
-  @apply  w-full sticky top-[50px] p-0 bg-white border-t border-b border-[#F0F0F0] z-[999];
+  @apply  w-full sticky top-[50px] p-0 bg-white border-t border-b border-[#F0F0F0] z-[1];
 }
 
 .home{

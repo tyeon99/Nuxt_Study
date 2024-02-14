@@ -240,7 +240,7 @@ export default {
   }
 
   .historyExp .nav{
-    @apply w-full bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.05)] z-[999] sticky top-[86px];
+    @apply w-full bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.05)] sticky top-[86px] z-[1];
   }
 
   .historyExp .nav button{
