@@ -5,6 +5,7 @@
     <introNav />
 
     <introMain04 />
+    <historyExp />
 
     <Footer />
 

@@ -37,8 +37,8 @@ export default {
         { to: '/menu/corporateOverview', ko: '회사개요', en: 'Corporate Overview' },
         { to: '/menu/ceoMessage', ko: 'CEO메시지', en: 'CEO Message' },
         { to: '/menu/ourVision', ko: '비전', en: 'VISION' },
-        { to: '/menu/history01', ko: '연혁', en: 'History' },
-        { to: '/menu/contact', ko: '오시는길', en: 'Contact' },
+        { to: '/menu/history', ko: '연혁', en: 'History' },
+        { to: '/menu/contact', ko: '오시는 길', en: 'Contact' },
         // ... 다른 메뉴 아이템들
       ],
     }

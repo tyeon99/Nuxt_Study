@@ -61,7 +61,7 @@
                       <li><button><nuxt-link to="/menu/corporateOverview">회사개요</nuxt-link></button></li>
                       <li><button><nuxt-link to="/menu/ceoMessage">CEO메시지</nuxt-link></button></li>
                       <li><button><nuxt-link to="/menu/ourVision">비전</nuxt-link></button></li>
-                      <li><button><nuxt-link to="/menu/history01">연혁</nuxt-link></button></li>
+                      <li><button><nuxt-link to="/menu/history">연혁</nuxt-link></button></li>
                       <li><button><nuxt-link to="/menu/contact">오시는 길</nuxt-link></button></li>
                     </ul>
                   </div>

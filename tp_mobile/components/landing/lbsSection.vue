@@ -46,8 +46,9 @@ export default {
     new Swiper(".lbsSwiper", {
       slidesPerView: 'auto',
       spaceBetween: 20,
-      loop: true,
-      loopedSlides: 1,
+      // loop: true,
+      centeredSlides: true,
+      // loopedSlides: 1,
       // autoplay: {
       //   delay: 2000,
       //   disableOnInteraction: false,

@@ -2,8 +2,8 @@
   <div class="introMain">
 
     <div class="mainTitle">
-      <span>History</span>
-      <strong>연혁</strong>
+      <span>Contact</span>
+      <strong>오시는 길</strong>
     </div>
 
   </div>
@@ -19,6 +19,6 @@ export default {
   @import '~/assets/css/intro-main';
 
   .mainTitle{
-    @apply mb-[20px];
+    @apply mb-[25px];
   }
 </style>

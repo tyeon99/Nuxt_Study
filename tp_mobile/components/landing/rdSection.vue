@@ -51,8 +51,9 @@ export default {
     new Swiper(".rdSwiper", {
       slidesPerView: 'auto',
       spaceBetween: 20,
-      loop: true,
-      loopedSlides: 1,
+      centeredSlides: true,
+      // loop: true,
+      // loopedSlides: 1,
       // autoplay: {
       //   delay: 2000,
       //   disableOnInteraction: false,
