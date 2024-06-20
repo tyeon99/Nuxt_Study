@@ -1,9 +1,9 @@
 <template>
-  <Tutorial />
+  <WebMain />
 </template>
 
 <script>
 export default {
-  name: 'IndexPage',
+  layout: 'default',
 }
 </script>

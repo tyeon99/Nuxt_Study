@@ -1,3 +1,435 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* font */
+* { font-family: 'Spoqa Han Sans Neo', 'sans-serif' !important; }
+/* font */
+
+/* reset */
+html,
+body {
+  @apply h-full;
+}
+
+em {
+  @apply not-italic;
+}
+
+a{
+  @apply cursor-pointer;
+}
+
+.kor *.en {
+  @apply hidden !important;
+}
+.eng *.ko {
+  @apply hidden !important;
+}
+
+#__nuxt,
+#__layout,
+#wrap {
+  @apply h-full;
+}
+
+.text-truncate{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-truncate2{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important; 
+  -webkit-box-orient: vertical !important;
+}
+
+.text-truncate3{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3 !important; 
+  -webkit-box-orient: vertical !important;
+}
+/* reset */
+
+.list01{
+  @apply min-w-[130px];
+}
+
+.list02{
+  @apply min-w-[150px];
+}
+
+.list03{
+  @apply min-w-[130px];
+}
+
+.list04{
+  @apply min-w-[148px];
+}
+
+.list05{
+  @apply min-w-[130px];
+}
+
+.list06{
+  @apply min-w-[74px];
+}
+
+.list07{
+  @apply min-w-[50px];
+}
+
+.list08{
+  @apply min-w-[74px];
+}
+
+/* landing section */
+
+.section{
+  @apply w-full h-[970px] flex justify-center items-center overflow-hidden;
+}
+
+.titleSpan{
+  @apply text-[#5368ff] text-[20px] font-bold leading-[21px] mb-[6px];
+}
+
+.sectionTitle{
+  @apply text-[#141414] text-[48px] font-bold leading-[60px] mb-[30px];
+}
+
+.sectionSubTitle{
+  @apply text-[#141414] text-[32px] font-[300] leading-[24px];
+}
+
+.img01{
+  background: url(~/assets/img/section3Img01.gif) #DEE3EA 50%;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 124px;
+  height: 121px;
+}
+
+.img02{
+  background: url(~/assets/img/section3Img02.gif) #DEE3EA 50%;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 126px;
+  height: 126px;
+}
+
+.img03{
+  background: url(~/assets/img/section4Img01.gif);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 109px;
+  height: 106px;
+}
+
+.img04{
+  background: url(~/assets/img/section4Img02.gif);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 126px;
+  height: 126px;
+}
+
+.img05{
+  background: url(~/assets/img/section5Img01.gif);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 169px;
+  height: 153px;
+}
+
+.img06{
+  background: url(~/assets/img/section5Img02.gif);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 149px;
+  height: 153px;
+}
+
+.img07{
+  background: url(~/assets/img/section5Img03.gif);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 143px;
+  height: 153px;
+}
+
+.rassiBg .titleSpan{
+  @apply hidden;
+}
+/* landing section */
+
+/* categoryIntro */
+.categoryIntro{
+  @apply w-full pt-[45px] text-center;
+}
+
+.categoryIntro .titleSpan{
+  @apply text-[#9395a1] text-[16px] font-normal leading-[20px] mb-[8px];
+}
+
+.categoryIntro .title{
+  @apply text-[#141414] text-[48px] font-bold leading-[60px] mb-[80px];
+}
+/* categoryIntro */
+
+/* categoryContent */
+.categoryContent{
+  @apply w-full p-[114px_0] flex justify-center items-start gap-[150px];
+}
+
+.contentLeft{
+  @apply flex flex-col gap-[50px];
+}
+
+.categoryContent .contentTitle{
+  @apply relative text-[#141414] text-[28px] font-bold leading-[36px] before:content-[''] before:bg-[url(~/assets/img/contentTitleBefore.png)] before:absolute before:bg-cover before:w-[35px] before:h-[35px] before:z-[-1] after:content-[''] after:bg-[url(~/assets/img/contentTitleAfter.png)] after:absolute after:bg-cover after:w-[35px] after:h-[35px] after:z-[-1];
+}
+
+.categoryContent .contentTxt{
+  @apply text-[#444] text-[20px] font-normal leading-[30px];
+}
+
+.categoryContent .contentRight{
+  @apply mt-[53px] w-[744px];
+}
+
+.categoryContent .contentList{
+  @apply border-t-[1px] border-[#8c8c8c] mb-[30px]; 
+}
+
+.categoryContent .contentList .list{
+  @apply w-full p-[28px_20px] border-b-[1px] border-[#f0f0f0] flex justify-start items-center gap-[50px] text-left;
+}
+
+.categoryContent .contentList .list strong{
+  @apply block text-[#141414] text-[18px] leading-[22px] min-w-[200px];
+}
+
+.categoryContent .contentList .list span{
+  @apply block text-[#141414] text-[18px] font-normal leading-[22px];
+}
+/* categoryContent */
+
+/* milestone */
+.milestonesNav{
+  @apply w-full h-[70px] flex justify-center items-center;
+}
+
+.milestonesNav a{
+  @apply w-[250px] h-[70px] leading-[70px] text-center text-[#9395a1] text-[24px] font-normal;
+}
+
+.milestonesNav a.active{
+  @apply text-[#141414] border-b-[2px] border-[#141414];
+}
+
+.milestonesBox{
+  @apply w-full flex justify-center items-start bg-[#FCFAFA] p-[90px_0] gap-[260px];
+}
+
+.milestonesBox .navTxt{
+  @apply text-[#141414] text-[48px] font-bold leading-[60px];
+}
+
+.milestonesBox .milestonesList{
+  @apply flex flex-col gap-[60px] justify-start items-start;
+}
+
+.milestonesBox .yearsList{
+  @apply flex justify-normal items-start gap-[120px];
+}
+
+.milestonesBox .years{
+  @apply text-[#141414] text-[30px] font-normal leading-[38px];
+}
+
+.milestonesBox .monthTxt{
+  @apply flex flex-col justify-start items-start gap-[20px];
+}
+
+.milestonesBox .list{
+  @apply flex justify-start items-start gap-[45px];
+}
+
+.milestonesBox .month{
+  @apply text-[#141414] text-[20px] font-bold leading-[30px];
+}
+
+.milestonesBox .txt{
+  @apply w-[730px] text-[#141414] text-[20px] font-normal leading-[30px];
+}
+/* milestone */
+/* award */
+.awardBox .img{
+  @apply flex justify-center;
+}
+/* award */
+
+/* LoginProtectionServices */
+.LoginProtectionServices{
+  @apply flex justify-center items-center p-[48px_0_200px];
+}
+
+.lbsContent{
+  @apply w-[1480px] h-[740px] flex justify-between items-center gap-[100px];
+}
+/* LoginProtectionServices */
+
+/* rdCenter */
+.rdWrap{
+  @apply  p-[50px_0px_150px];
+}
+
+.rdWrap .titleSpan{
+  @apply text-[#9395a1] text-[16px] font-normal leading-[20px] mb-[8px] text-center;
+}
+
+.rdWrap .title{
+  @apply text-[#141414] text-[48px] font-bold leading-[60px] text-center mb-[80px];
+}
+
+.rdContent{
+  @apply flex justify-center items-center gap-[60px];
+}
+
+.rdContent .img img{
+  @apply rounded-[20px];
+}
+
+.rdContent .txtWrap{
+  @apply w-[693px] h-[899px] p-[60px] rounded-[20px] bg-[#fbfbfb] flex flex-col justify-between items-start;
+}
+
+.rdContent .title{
+  @apply text-[#141414] text-[28px] font-bold leading-[36px] mb-[20px] text-left;
+}
+
+.rdContent .title span{
+  @apply text-[#5368ff];
+}
+
+.rdContent .subTitle{
+  @apply text-[#000] text-[16px] font-normal leading-[25px]
+}
+
+.rdContent .txt{
+  @apply text-[#444] text-[14px] font-normal leading-[22px] mb-[35px];
+}
+
+.rdContent .txt strong{
+  @apply text-[#141414];
+}
+
+.rdContent .shortcutBtn {
+  @apply mt-[30px];
+}
+
+.rdContent .shortcutBtn button{
+  @apply w-[234px] h-[46px] leading-[46px] rounded-[6px] text-center text-[#fff] text-[14px] font-bold bg-[#5368ff];
+}
+
+.rdContent .txtTitle{
+  @apply mb-[20px] text-[#141414] text-[16px] font-bold leading-[22px];
+}
+
+.rdContent .txtFlex{
+  @apply flex justify-start items-start gap-[45px];
+}
+/* rdCenter */
+
+/* prBoard */
+.board{
+  @apply p-[45px_0_150px] w-[1353px];
+}
+
+.board .titleSpan{
+  @apply text-[#9395a1] text-[16px] font-normal leading-[20px] mb-[8px] text-center;
+}
+
+.board .title{
+  @apply text-[#141414] text-[48px] font-bold leading-[60px] text-center mb-[80px];
+}
+
+.board .boardList{
+  @apply w-full border-t-[1px] border-[#444] mb-[70px];
+}
+
+.board .boardList.gap-0.pt-0{
+  @apply !gap-0 !pt-0;
+}
+
+.board .list{
+  @apply w-full p-[25px_15px_25px_25px] flex justify-between items-center border-b-[1px] border-[#E6E6EB] gap-[100px] text-left;
+}
+
+.board .list .boardCon{
+  @apply w-[calc(100%-180px)];
+}
+
+.board .list .title{
+  @apply text-[#141414] text-[18px] font-normal leading-[23px] mb-0 text-left;
+}
+
+.board .list:first-child .title{
+  @apply text-[#141414] text-[20px] font-bold leading-[25px] mb-[10px];
+}
+
+.board .list:first-child .txt{
+  @apply text-[#444] text-[16px] font-normal leading-[24px];
+}
+
+.board .list .date{
+  @apply min-w-[80px] text-right text-[#9395a1] text-[14px] font-normal leading-[18px];
+}
+
+.board .more{
+  @apply w-full text-center;
+}
+
+.board .more button{
+  @apply w-[175px] h-[40px] rounded-[5px] bg-[#f4f5f6] text-[#141414] text-[14px] font-normal leading-[40px];
+}
+
+.boardList .listDetail{
+  @apply w-full p-[40px_25px] border-b-[1px] border-[#e6e6eb];
+}
+
+.boardList .listDetail .title{
+  @apply text-[#141414] text-[28px] font-bold leading-[35px] mb-[10px] text-left;
+}
+
+.boardList .listDetail .date{
+  @apply text-left text-[#9395a1] text-[14px] font-normal leading-[18px];
+}
+
+.boardList .listDetail .txt{
+  @apply text-[#444] text-[18px] font-normal leading-[30px] pb-[50px];
+}
+
+.boardList .anotherList{
+  @apply w-full border-b-[1px] border-[#e6e6eb] p-[22px_25px] text-left flex justify-start items-center gap-[35px] text-[18px] text-[#141414] font-normal leading-[30px];
+}
+/* prBoard */
