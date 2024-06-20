@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font */
+* { font-family: 'Spoqa Han Sans Neo', 'sans-serif' !important; }
+/* font */
+
+html,
+body {
+  @apply h-full;
+}
+
+em {
+  @apply not-italic;
+}
+
+a, button{
+  @apply cursor-pointer;
+}
+
+#__nuxt,
+#__layout,
+#wrap {
+  @apply h-full;
+}
