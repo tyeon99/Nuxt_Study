@@ -5,6 +5,7 @@
       <button @click="goLink('practice01')">Practice01</button>
       <button @click="goLink('practice02')">Practice02</button>
       <button @click="goLink('practice03')">Practice03</button>
+      <button @click="goLink('practice04')">Practice04</button>
     </div>
   </div>
 </template>
